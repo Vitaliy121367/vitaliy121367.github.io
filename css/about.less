@@ -1,0 +1,217 @@
+@backcolor: rgb(57, 57, 57);
+@colortext: rgb(255, 242, 0);
+*,html,body {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: url(../img/about_bg.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+  }
+  .head{
+    height: 19vh;
+  }
+  .color-nav{
+    opacity: 1;
+    color: @colortext;
+  }
+  .item{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background: none;
+    color: @colortext;
+    font-size: large;
+  }
+  .textinf{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 10vh;
+    color: yellow;
+    font-size:50px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+  .texti{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: rgb(242, 255, 0);
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-none{
+    color: @colortext;
+    text-decoration:none;
+  }
+  .footersize{
+    height: 100%;
+    width: 100%;
+    padding-top: 35px;
+  }
+  .nav{
+    background-color: gray;
+  }
+  .h{
+    height: 15vh;
+  }
+  .myimg{
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid black;
+  }
+  .ani:hover{
+    animation-name: menuAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    color: green;
+}
+.ani:not(:hover){
+    animation-name: menubackAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    color: @colortext;
+}
+@keyframes  menuAnimation{
+    from {color: @colortext;}
+    to {color: green;}
+}
+@keyframes  menubackAnimation{
+    from {color: green;}
+    to {color: @colortext;}
+}
+@media screen and (max-width: 1396px) {
+  .myimg{
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid black;
+  }
+  .textinf{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 10vh;
+    color: yellow;
+    font-size:43px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+}
+  @media screen and (max-width: 1203px) {
+    .myimg{
+      width: 100%;
+      border-radius: 100%;
+      border: 5px solid black;
+    }
+    .textinf{
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      height: 10vh;
+      color: yellow;
+      font-size:40px;
+      text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    }
+  .texti{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: rgb(242, 255, 0);
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+  }
+  body{
+    background: url(../img/about_bg.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 991px) {
+  .myimg{
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid black;
+  }
+  .textinf{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 15vh;
+    color: yellow;
+    font-size:50px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+  .texti{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    color: rgb(242, 255, 0);
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+  }
+  body{
+    background: url(../img/about_bg.jpg) no-repeat center;
+    height: 165vh;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 570px) {
+  .myimg{
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid black;
+  }
+  .textinf{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 20vh;
+    color: yellow;
+    font-size:50px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+  .texti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(242, 255, 0);
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+  }
+  body{
+    background: url(../img/about_bg.jpg) no-repeat center;
+    height: 130vh;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 430px) {
+  .myimg{
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid black;
+  }
+  .textinf{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 20vh;
+    color: yellow;
+    font-size:50px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
+  .texti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(242, 255, 0);
+    text-shadow: rgb(0, 0, 0) 10px 0 10px;
+  }
+  body{
+    background: url(../img/about_bg.jpg) no-repeat center;
+    height: 150vh;
+    background-size: cover;
+  }
+}

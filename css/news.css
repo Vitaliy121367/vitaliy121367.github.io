@@ -1,0 +1,124 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(../img/news_bg.jpg) no-repeat center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.container-fluid {
+  background-color: #393939;
+  opacity: 0.8;
+}
+.head {
+  height: 18vh;
+}
+.color-nav {
+  opacity: 1;
+  color: #fff200;
+}
+.item {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  background: none;
+  color: #fff200;
+  font-size: large;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footsiz {
+  height: 100%;
+}
+.text-none {
+  color: #fff200;
+  text-decoration: none;
+}
+.footersize {
+  height: 100%;
+  padding-top: 35px;
+}
+.nav {
+  background-color: gray;
+}
+.h {
+  height: 15px;
+}
+.ani:hover {
+  animation-name: menuAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  color: green;
+}
+.ani:not(:hover) {
+  animation-name: menubackAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  color: #fff200;
+}
+@keyframes menuAnimation {
+  from {
+    color: #fff200;
+  }
+  to {
+    color: green;
+  }
+}
+@keyframes menubackAnimation {
+  from {
+    color: green;
+  }
+  to {
+    color: #fff200;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .myimg {
+    width: 100%;
+    border-radius: 100%;
+    border: 5px solid black;
+  }
+  .textinf {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 50vh;
+    color: yellow;
+    font-size: 43px;
+    text-shadow: #000000 1px 0 10px;
+  }
+  .item {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: none;
+    color: #fff200;
+    font-size: large;
+  }
+}
+@media screen and (max-width: 430px) {
+  .head {
+    height: 32vh;
+  }
+  .item {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    background: none;
+    color: #fff200;
+    font-size: large;
+  }
+}

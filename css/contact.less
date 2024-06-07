@@ -1,0 +1,209 @@
+@backcolor: rgb(57, 57, 57);
+@colortext: rgb(255, 242, 0);
+*,html,body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background: url(../img/contact.jpg) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+  }
+  .container-fluid{
+    background-color: @backcolor;
+    width: 100%;
+    opacity: 0.8;
+  }
+  .head{
+    height: 19vh;
+  }
+  .color-nav{
+    opacity: 1;
+    color: @colortext;
+  }
+  .item{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100.46%;
+    background: none;
+    color: @colortext;
+    font-size: large;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-none{
+    color: @colortext;
+    text-decoration:none;
+  }
+  .footersize{
+    height: 100%;
+    padding-top: 35px;
+  }
+  .nav{
+    background-color: gray;
+  }
+  .h{
+    height: 15px;
+  }
+  .ani:hover{
+    animation-name: menuAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    color: green;
+}
+.ani:not(:hover){
+    animation-name: menubackAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    color: @colortext;
+}
+@keyframes  menuAnimation{
+    from {color: @colortext;}
+    to {color: green;}
+}
+@keyframes  menubackAnimation{
+    from {color: green;}
+    to {color: @colortext;}
+}
+.box{
+    height: 10vh;
+}
+.box_special2{
+    height: 250px;
+}
+.text2{
+    height: 100px;
+    align-content: center;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: @colortext;
+}
+.text3{
+    height: 120px;
+    align-content: center;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+}
+@media screen and (max-width: 1396px) {
+  .text2{
+      height: 90px;
+      align-content: center;
+      font-size: 35px;
+      text-align: center;
+      color: @colortext;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  body{
+      background: url(../img/contact.jpg) no-repeat center;
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+  }
+  .item{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100.99%;
+    background: none;
+    color: @colortext;
+    font-size: large;
+  }
+}
+@media screen and (max-width: 1280px) {
+    .text2{
+        height: 80px;
+        align-content: center;
+        font-size: 35px;
+        text-align: center;
+        color: @colortext;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body{
+        background: url(../img/contact.jpg) no-repeat center;
+        height: 140vh;
+        width: 100%;
+        background-size: cover;
+    }
+    .item{
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      width: 101%;
+      background: none;
+      color: @colortext;
+      font-size: large;
+    }
+}
+@media screen and (max-width: 767px) {
+  .text2{
+      height: 90px;
+      align-content: center;
+      font-size: 25px;
+      text-align: center;
+      color: @colortext;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  body{
+      background: url(../img/contact.jpg) no-repeat center;
+      height: 145vh;
+      width: 100%;
+      background-size: cover;
+  }
+  .item{
+    opacity: 1;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 101.6%;
+    background: none;
+    color: @colortext;
+    font-size: large;
+  }
+}
+@media screen and (max-width: 576px) {
+    .head{
+      height: 50vh;
+    }
+    .text2{
+        height: 90px;
+        align-content: center;
+        font-size: 25px;
+        text-align: center;
+        color: @colortext;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .item{
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 55vh;
+      width: 102.9%;
+      background: none;
+      color: @colortext;
+      font-size: large;
+    }
+    body{
+        background: url(../img/contact.jpg) no-repeat center;
+        height: 350vh;
+        width: 100%;
+        background-size: cover;
+    }
+}
